@@ -9,6 +9,7 @@
  * 2023.9.3 更新：完善刷新 ck 的功能
  */
 const $ = new Env('饿了么账号有效性检测');
+
 const {
   getEnvsByName,
   DisableCk,
@@ -150,13 +151,12 @@ async function _0x179175(_0x2afd75, _0x2c035c, _0x3898fc) {
             await EnableCk(_0x108a11);
             console.log("第", _0x4b02a3 + 1, "账号正常😁\n");
           } else {
-          	
-            //const _0x4fe156 = await DisableCk(_0x108a11);
+            const _0x4fe156 = await DisableCk(_0x108a11);
 
-            if (200 === 200) {
-       //       console.log("第", _0x4b02a3 + 1, "账号失效！已🈲用");
+            if (_0x4fe156.code === 200) {
+             // console.log("第", _0x4b02a3 + 1, "账号失效！已🈲用");
             } else {
-              console.log("第", _0x4b02a3 + 1, "账号失效！请重新登录！！！😭");
+            //  console.log("第", _0x4b02a3 + 1, "账号失效！请重新登录！！！😭");
             }
 
             await invalidCookieNotify(_0x55e0ac, _0x29805f[_0x4b02a3].remarks);
@@ -171,13 +171,12 @@ async function _0x179175(_0x2afd75, _0x2c035c, _0x3898fc) {
               await EnableCk(_0x108a11);
               console.log("第", _0x4b02a3 + 1, "账号正常😁\n");
             } else {
-            	
-             // const _0x54a0b8 = await DisableCk(_0x108a11);
+              const _0x54a0b8 = await DisableCk(_0x108a11);
 
-              if (200 === 200) {
-        //        console.log("第", _0x4b02a3 + 1, "账号失效！已🈲用");
+              if (_0x54a0b8.code === 200) {
+              //  console.log("第", _0x4b02a3 + 1, "账号失效！已🈲用");
               } else {
-                console.log("第", _0x4b02a3 + 1, "账号失效！请重新登录！！！😭");
+             //   console.log("第", _0x4b02a3 + 1, "账号失效！请重新登录！！！😭");
               }
             }
 
